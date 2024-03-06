@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr"> <!-- Sayfanın dilini Türkçe olarak belirtiyoruz -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatih Mehmet Gürbüz</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Kenar Çubuğu Stilleri */
+        #sidebar {
+            display: none;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #222;
+            padding-top: 60px;
+            padding-right: 20px;
+            color: white;
+            z-index: 1;
+        }
+
+        /* Menü İkonu Stili */
+        #menuIcon {
+            cursor: pointer;
+        }
+
+        /* Kenar Çubuğu Kapatma Butonu Stili */
+        #closeBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        /* Kenar Çubuğu Bağlantı Stilleri */
+        #sidebar a {
+            padding: 15px 0;
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Kenar Çubuğu Bağlantı Hover Stili */
+        #sidebar a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span id="menuIcon" class="navbar-toggler-icon" onclick="openSidebar()">&#9776;</span>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">  
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/fatih_m_gurbuz/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>          
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/fatihnet75" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/fatih-mehmet-g%C3%BCrb%C3%BCz-99bb76269/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+</nav>
+
+<!-- Kenar Çubuğu -->
+<div id="sidebar">
+    <span id="closeBtn" onclick="closeSidebar()">&times;</span>
+    <a href="#">&nbsp; Öğrenim Bilgileri</a>
+    <a href="#">&nbsp;Araştırmalar</a>
+    <a href="#">&nbsp;Projeler</a>
+    <a href="#">&nbsp;Sunumlar</a>
+    <a href="#">&nbsp;İletişim</a>
+</div>
+    
+<!-- Jumbotron -->
+<div class="jumbotron text-center" style="background-image: url('İmage/Ardahan.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <h1>Fatih Mehmet Gürbüz</h1>
+    <h3>Fatih Mehmet Gürbüz kimdir ve projeleri nelerdir?</h3>      
+</div>
+
+<!-- Container -->
+<div class="container-fluid">
+    <!-- Satırlar ve Sütunlar -->
+    <div class="row">
+        <div class="col-sm-2 " style="background-color: #F1EAFF;">
+            <div>
+                <p class="text-primary" style="font-size: 30px";>Beceriler</p>
+                <!-- Beceri Bağlantıları -->
+                <a class="nav-link" href="https://html.com/" target="_blank"><i class="fa-brands fa-html5"></i><i>     html</i></a>
+                <a class="nav-link" href="https://www.w3schools.com/css/" target="_blank"><i class="fa-brands fa-css3-alt"></i><i>  css</i></a>
+                <a class="nav-link" href="https://java.com.tr/" target="_blank"><i class="fa-brands fa-java"></i><i>       java</i></a>
+                <a class="nav-link" href="https://www.w3schools.com/cpp/" target="_blank"><i class="fa-solid fa-code"></i><i>     c  c++  c#</i></a>
+                <a class="nav-link" href="https://www.linux.org/" target="_blank"><i class="fa-brands fa-linux"></i><i>       linux</i></a>
+            </div> 
+        </div>
+        <div class="col-sm-3 card">
+             <img class="card-img-top" src="İmage/FTH.jpeg" alt="Card image">
+        </div>
+        <div class="col-sm-7">
+            <h3 class="text-center">Hakkımda</h3>
+            <!-- Hakkımda Metni -->
+            <p>Merhaba! Benim adım Fatih Mehmet Gürbüz. Bilgisayar mühendisi, yazılım geliştirici ve tutkulu bir teknoloji severim. 2002 yılında Ardahan'da doğdum ve çocukluğumdan beri bilgisayarlar ve teknolojiye olan ilgimle tanınırım. Eğitim hayatımda Bilgisayar Mühendisliği alanında lisans derecesini tamamladım. Öğrenmeye ve yeni teknolojileri keşfetmeye olan tutkum, yazılım geliştirme alanında kendimi sürekli olarak geliştirmeme ve yeni projeler üretmeme olanak tanıdı.
+                Yazılım dünyasında özellikle C, C#, Java, Python gibi dillerle çalışmayı severim. Aynı zamanda web geliştirme konusunda HTML, CSS ve JavaScript teknolojilerini sıkça kullanırım. Bu sayede çeşitli projelerde yer alıyor ve sürekli olarak yeni şeyler öğrenme yolunda ilerliyorum.
+                Ayrıca, teknolojiyle ilgili güncel gelişmeleri takip etmek ve bunları paylaşmak benim için bir zevktir. Bu nedenle, bu blogda ve sosyal medya platformlarımda teknoloji, yazılım geliştirme ve kişisel deneyimlerimle ilgili içerikler paylaşıyorum.
+                Eğer benimle iletişime geçmek veya projeler hakkında daha fazla bilgi almak istiyorsanız, lütfen benimle iletişime geçmekten çekinmeyin. İyi okumalar!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2024 - <span style="font-family: 'Arial', sans-serif; font-weight: bold; color: #ff0000; background-color: ">Fatih Mehmet Gürbüz</span>
+</footer>
+
+<!-- JavaScript Kütüphaneleri -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Kenar Çubuğu Açma Fonksiyonu
+    function openSidebar() {
+        document.getElementById("sidebar").style.display = "block";
+    }
+
+    // Kenar Çubuğu Kapatma Fonksiyonu
+    function closeSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+    }
+</script>
+</body>
+</html>
